@@ -43,3 +43,6 @@ function go_projects_func() {
         fi
 }
 ```
+
+![screenshot](proj_nav_screenshot.png)
+
