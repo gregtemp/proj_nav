@@ -49,7 +49,7 @@ cat add_to_bashrc >> ~/.bashrc
 ```
 
 ## Screenshot!
-Some project names n shit are "redacted" haha (in blue)
+Some project names are "redacted" haha (in blue)
 
 ![screenshot](proj_nav_screenshot.png)
 
