@@ -53,6 +53,4 @@ Some project names are "redacted" haha (in blue)
 
 ![screenshot](proj_nav_screenshot.png)
 
-### Etc
-If you wanna work on this with me, please do, that would be great. If you have a feature request, you can tell me but unless I really like it I probably won't add it haha
 
