@@ -31,11 +31,28 @@ make sure to -rescan if you edit project_folders.txt manually
 ```
 
 ### .bashrc
-Add the contents of add_to_bashrc to your .bashrc file
-``` cat add_to_bashrc >> ~/.bashrc ```
+Modify add_to_bashrc to have the correct path to proj_nav, I keep mine in ~/.projnav so I would do
+```
+... previous lines
+function run_projects_func() {
+        python /home/gregtemp/.projnav/proj_nav.py "$@"
+}
+
+function go_projects_func() {
+        command=$(python /home/gregtemp/.projnav/proj_nav.py "$@")
+... rest of the file
+```
+
+Add the contents of add_to_bashrc to your .bashrc file.
+``` 
+cat add_to_bashrc >> ~/.bashrc
+```
 
 ## Screenshot!
 Some project names n shit are "redacted" haha (in blue)
 
 ![screenshot](proj_nav_screenshot.png)
+
+### Etc
+If you wanna work on this with me, please do, that would be great. If you have a feature request, you can tell me but unless I really like it I probably won't add it haha
 
