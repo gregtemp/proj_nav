@@ -9,6 +9,18 @@ no args:         - print all projects
 name or idx      - if you already know the name or idx you can get it directly
 -rescan          - rescan folders in project_folders.txt
 -add             - add folder(s) to your project_folders.txt, you can add a single folder or many
+
+examples:
+List all projects modified in the last 10 days
+    projects -d 10
+Go to project called "sickassproj"
+    projects_go sickassproj
+Get project at index 302
+    projects 302
+Show only the projects in a particular project folder
+    projects -f goodfolder
+Go to main project folder for "goodfolder" project
+    projects_go goodfolder
 ```
 
 ### project_folders.txt
