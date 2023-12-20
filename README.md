@@ -1,11 +1,7 @@
-# proj_nav
-Navigate your projects
+# PROJ NAV
+Quickly navigate between project folders
 
-## project_folders.txt
-Add the paths to the folders where your projects are to project_folders.txt
-or you can use the -add option
-
-## Usage
+### Usage
 ```
 no args:         - print all projects
 -f <name>        - (filter) show only project by this name
@@ -15,34 +11,19 @@ name or idx      - if you already know the name or idx you can get it directly
 -add             - add folder(s) to your project_folders.txt, you can add a single folder or many
 ```
 
-## .bashrc
-Add this to your .bashrc, but obvs change the path to wherever you want it to be
+### project_folders.txt
 ```
-alias projects='run_projects_func'
-alias projects_go='go_projects_func'
-
-function run_projects_func() {
-        python /path/to/proj_nav/proj_nav.py "$@"
-}
-
-function go_projects_func() {
-        command=$(python /path/to/proj_nav/proj_nav.py "$@")
-
-        # Extract the first word of the command
-        first_word=$(echo "$command" | awk '{print $1}')
-
-        # Check if the first word is 'cd'
-        if [ "$first_word" = "cd" ]; then
-                echo " "
-                echo "$command"
-                echo " "
-                eval "$command"
-                ls
-        else
-                echo "Not a valid project, check output with projects proj_name first"
-        fi
-}
+Add the paths to the folders where your projects are to project_folders.txt
+or you can use the -add option
+make sure to -rescan if you edit project_folders.txt manually
 ```
+
+### .bashrc
+Add the contents of add_to_bashrc to your .bashrc file
+``` cat add_to_bashrc >> ~/.bashrc ```
+
+## Screenshot!
+Some project names n shit are "redacted" haha (in blue)
 
 ![screenshot](proj_nav_screenshot.png)
 
