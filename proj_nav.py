@@ -75,13 +75,13 @@ def item_date_val(date_str):
     return date_arr[2]*365 + days_in_month[date_arr[1]-1] + date_arr[0]
 
 def get_item_path(item):
-    print(f'cd {proj_paths[item.lower()]["path"]}')
+    print(f'pushd {proj_paths[item.lower()]["path"]}')
 
 
 def get_item_by_idx(idx):
     for item in proj_paths:
         if proj_paths[item]["idx"] == idx:
-            print(f'cd {proj_paths[item]["path"]}')
+            print(f'pushd {proj_paths[item]["path"]}')
 
 def find_item(usr_sel):
     try:
