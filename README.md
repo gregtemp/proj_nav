@@ -1,5 +1,5 @@
 # PROJ NAV
-Quickly navigate between project folders
+Quickly navigate between project folders. Now uses pushd instead of cd so wherever you go you can use popd to go back, or dirs -v to view the stack and go back to somewhere specific.
 
 ### Usage
 ```
