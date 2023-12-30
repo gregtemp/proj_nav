@@ -12,7 +12,7 @@ function go_projects_func() {
         first_word=$(echo "$command" | awk '{print $1}')
 
         # Check if the first word is 'cd'
-        if [ "$first_word" = "cd" ]; then
+        if [ "$first_word" = "pushd" ]; then
                 echo " "
                 echo "$command"
                 echo " "
